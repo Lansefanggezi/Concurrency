@@ -1,0 +1,7 @@
+package com.concurrency.kang;
+
+public class DeadLockDemo {
+	private static String A = "A";
+	private static String B = "B";
+	public static void main(String[] args){}
+}

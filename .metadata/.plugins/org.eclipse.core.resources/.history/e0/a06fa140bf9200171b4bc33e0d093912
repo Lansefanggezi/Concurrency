@@ -1,0 +1,23 @@
+package com.concurrency.kang;
+
+public class Concurrency170906 {
+	private static final long count = 10001;
+	public static void main(String[]args)throws InterruptedException
+	{
+		concurrency();
+		serial();
+	}
+	private static void concurrency() throws InterruptedException
+	{
+		long start = System.currentTimeMillis();
+		Thread thread = new Thread(new Runnable(){
+			public void run(){
+				
+			}
+		});
+	}
+	private static void serial()
+	{
+		
+	}
+}

@@ -1,0 +1,21 @@
+package com.concurrency.kang;
+
+public class DeadLockDemo {
+	
+	private static String A = "A";
+	private static String B = "B";
+	
+	public static void main(String[] args){
+		new DeadLockDemo().deadLock();
+	}
+	private void deadLock(){
+		Thread thread1 = new Thread(new Runnable(){
+			@Override
+			public void run(){
+				synchronized(A){
+					try{}
+				}
+			}
+		});
+	}
+}
