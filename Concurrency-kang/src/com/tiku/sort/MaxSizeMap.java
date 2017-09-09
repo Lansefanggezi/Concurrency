@@ -1,4 +1,4 @@
-package com.tiku.map;
+package com.tiku.sort;
 
 public class MaxSizeMap {
 	public static void main(String [] args)
