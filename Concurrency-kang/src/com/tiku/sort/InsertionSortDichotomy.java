@@ -26,7 +26,7 @@ public class InsertionSortDichotomy {
 				}
 			}
 			for(int j = i -1;j>=left;j--){
-				A[j+1] = A[j];
+				A[j+1] = A[j];	//将插入位置右边的数值右移一位
 			}
 			A[left] = get;
 		}
