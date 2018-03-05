@@ -1,9 +1,0 @@
-package com.concurrency.kang;
-
-import java.util.concurrent.atomic.AtomicInteger;
-
-public class Count {
-	private AtomicInteger atomicI = new AtomicInteger(0);
-	private int i = 0;
-	public static void main(){}
-}
