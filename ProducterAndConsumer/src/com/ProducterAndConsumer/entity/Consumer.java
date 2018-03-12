@@ -21,7 +21,7 @@ public class Consumer {
 				{
 					lock.wait();
 				}
-				System.out.println("get 的值是:" + ValueObject.value);
+				System.out.println("get的值是:" + ValueObject.value);
 				ValueObject.value = "";
 				lock.notify();
 			}
