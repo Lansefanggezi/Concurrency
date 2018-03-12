@@ -15,10 +15,10 @@ public class MyThread1 extends Thread {
 		try {
 			synchronized(lock)
 			{
-				System.out.println(Thread.currentThread().getName() + "开始时间："
+				System.out.println(Thread.currentThread().getName() + "开始 wait时间："
 						+ System.currentTimeMillis());
 					lock.wait();
-				System.out.println(Thread.currentThread().getName() + "结束时间："
+				System.out.println(Thread.currentThread().getName() + "结束wait时间："
 						+ System.currentTimeMillis());
 			}
 		} catch (InterruptedException e) {

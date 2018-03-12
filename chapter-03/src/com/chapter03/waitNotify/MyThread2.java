@@ -15,10 +15,10 @@ public class MyThread2 extends Thread {
 		synchronized(lock)
 		{
 			System.out.println(Thread.currentThread().getName() 
-					+ "开始时间：" + System.currentTimeMillis());
+					+ "开始notify时间：" + System.currentTimeMillis());
 			lock.notify();
 			System.out.println(Thread.currentThread().getName()
-					+ "结束时间：" + System.currentTimeMillis());
+					+ "结束notify时间：" + System.currentTimeMillis());
 		}
 	}
 }
