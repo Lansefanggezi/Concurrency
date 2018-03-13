@@ -15,7 +15,7 @@ public class ReadData {
 			readLength = input.read(byteArray);
 			while(readLength != -1){
 				String data = new String(byteArray , 0, readLength);
-				System.out.println(data);
+				System.out.print("Read:" +data);
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
