@@ -21,4 +21,10 @@ public class MyObject implements Serializable {
 	{
 		return MyObjectHandler.myObject;
 	}
+	
+	protected Object readResolve() 
+	{
+		System.out.println("调用了readResolve方法");
+		return MyObjectHandler.myObject;
+	}
 }
