@@ -13,7 +13,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		try {
-			// TODO Auto-generated method stub
+			// 首先读取线程 new threadRead()启动，由于当时没有数据被写入，所以线程阻塞的int readLength = input.read(batyArray);代码中，直到有数据写入；
 			WriteData writeData = new WriteData();
 			ReadData readData = new ReadData();
 			
