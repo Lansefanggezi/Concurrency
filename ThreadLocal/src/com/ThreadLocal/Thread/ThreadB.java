@@ -9,8 +9,9 @@ public class ThreadB extends Thread {
 	{
 		for(int i = 10; i> 0; i--)
 		{
-			Tool.threadLocal.set("ThreadB 存储的数据:" + i);
-			System.out.println("ThreadB 存储的数据:"+ Tool.threadLocal.get());
+//			Tool.threadLocal.set("ThreadB 存储的数据:" + i);
+//			Tool.threadLocalExtens.set("ThreadB 存储的数据:" + i);
+			System.out.println("ThreadB 存储的数据:"+ Tool.threadLocalExtens.get());
 		}
 	}
 }
